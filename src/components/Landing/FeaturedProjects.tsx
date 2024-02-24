@@ -3,6 +3,7 @@ import React from 'react';
 import SectionHeader from '../SectionHeader';
 import RepoCard from './FeaturedProjects/RepoCard';
 
+// TODO: Fetch this from github instead of manually setting it
 const projects = [
   {
     name: 'typescript-template',
@@ -14,11 +15,11 @@ const projects = [
     forkCount: 0,
   },
   {
-    name: 'portfolio-website',
-    description: 'My personal website made with nextjs and tailwindcss',
-    tags: ['nextjs', 'tailwindcss', 'typescript'],
-    repoLink: 'https://github.com/NotKaskus/portfolio-website',
-    url: 'https://paul.is-a.dev',
+    name: '~/.dotfiles',
+    description: 'My dotfiles for configuring for literally everything (automatically!)',
+    tags: ['zsh', 'bash'],
+    repoLink: 'https://github.com/NotKaskus/dotfiles',
+    url: 'https://github.com/NotKaskus/dotfiles',
     starGazerCount: 0,
     forkCount: 0,
   },
