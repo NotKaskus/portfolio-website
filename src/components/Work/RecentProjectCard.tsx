@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { BiGitRepoForked, BiStar } from 'react-icons/bi';
-import { VscTerminalBash } from 'react-icons/vsc';
 
 import { parseISO } from '@/lib/utils';
 import { Button } from '../ui/button';
@@ -83,7 +82,7 @@ export function RecentProjectCard({ project }: { project: Project }) {
   );
 }
 
-export type Project = {
+export interface Project {
   name: string;
   description: string;
   technologies: Tech[];
@@ -100,7 +99,7 @@ export type Project = {
   started: string;
 };
 
-type Tech = {
+interface Tech {
   name: string;
   icon: string | React.ReactNode;
 };
