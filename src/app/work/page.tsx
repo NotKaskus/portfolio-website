@@ -26,7 +26,7 @@ const projects: Project[] = [
     ],
     github: 'https://github.com/NotKaskus/dotfiles', // if this is set to null then its closed-source, the github link will not be displayed
     projectBannerImage: {
-      src: '/test.png',
+      src: '/assets/projects/dotfiles/banner.png',
       alt: 'Dotfiles Banner Image',
       width: 1920,
       height: 1080,
