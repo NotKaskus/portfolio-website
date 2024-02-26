@@ -7,6 +7,15 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+/**
+ * @param {string} date Date to convert
+ * @returns {string} Converted date
+ * */
+export const parseISO = (date: string) => {
+  const formatted = new Date(date);
+  return `${formatted.toLocaleString("en-us", { month: "short" })}, ${formatted.getFullYear()}`;
+};
+
 export const processDiscordImage = (
   imageHash: string | undefined,
   appID?: string,
