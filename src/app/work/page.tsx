@@ -56,7 +56,7 @@ const projects: Project[] = [
     ],
     github: 'https://github.com/NotKaskus/typescript-template', // if this is set to null then its closed-source, the github link will not be displayed
     projectBannerImage: {
-      src: '/test.png',
+      src: 'https://opengraph.githubassets.com/2cdb167197cf491fc771c56a2ebda80a73819b87478c30eb344473127864aa38/NotKaskus/typescript-template',
       alt: 'Typescript Template Banner Image',
       width: 1920,
       height: 1080,
