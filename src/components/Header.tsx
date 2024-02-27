@@ -3,8 +3,8 @@ import { FaGithub, FaTwitter } from 'react-icons/fa6';
 
 import { meta } from '@/lib/config';
 import { cn } from '@/lib/utils';
-import NewMobileNav from './Nav/NewMobileNav';
-import NewNav from './Nav/NewNav';
+import MobileNav from './Nav/MobileNav';
+import NavBar from './Nav/NavBar';
 import ThemeToggler from './ThemeToggler';
 import { buttonVariants } from './ui/button';
 
@@ -12,8 +12,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-[73px] max-w-screen-2xl items-center">
-        <NewNav />
-        <NewMobileNav />
+        <NavBar />
+        <MobileNav />
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none" />
           <nav className="flex items-center">
