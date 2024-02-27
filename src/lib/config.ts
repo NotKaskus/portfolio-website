@@ -1,5 +1,9 @@
 import { FaDiscord, FaInstagram, FaTwitter } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
+import {
+  EnvelopeOpenIcon,
+  FolderIcon,
+} from '@heroicons/react/24/outline';
 
 export const meta = {
   title: 'Paul Andrew',
@@ -51,6 +55,20 @@ export const nav = {
     {
       href: '/blogs',
       title: 'Blog',
+    },
+  ],
+  more: [
+    {
+      href: '/work',
+      Icon: FolderIcon,
+      title: 'My Work',
+      description: 'My projects and contributions',
+    },
+    {
+      href: '/contact',
+      Icon: EnvelopeOpenIcon,
+      title: 'Contact',
+      description: 'Do you have any questions? Contact me!'
     },
   ],
   right: [

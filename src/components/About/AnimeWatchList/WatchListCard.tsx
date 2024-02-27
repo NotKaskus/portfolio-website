@@ -28,6 +28,7 @@ export default function WatchListCard({
               className='border-none w-full h-[3px] absolute bottom-0'
               value={(animeInfo.progress / (!animeInfo.episodes ? 0 : Number(animeInfo.episodes))) * 100} 
             />
+            <span className="sr-only">Progress</span>
             <div className="opacity-0 group-hover:opacity-100 h-full duration-300 absolute left-0 bottom-0 right-0 z-10 flex justify-center items-center text-sm bg-black/40 text-white font-semibold">
               <p className='text-center text-white'>
                 {animeInfo.title}

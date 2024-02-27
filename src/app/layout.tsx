@@ -78,7 +78,6 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
-          <div className='grid-overlay z-0'></div>
           {children}
           <Footer />
           <AnalyticsWrapper />
