@@ -1,4 +1,5 @@
 import React from 'react';
+import { VscTerminalBash } from 'react-icons/vsc';
 
 import SectionHeader from '../SectionHeader';
 import RepoCard from './FeaturedProjects/RepoCard';
@@ -8,18 +9,45 @@ const projects = [
   {
     name: 'typescript-template',
     description: 'A project template for all my projects that use typescript',
-    tags: ['nodejs', 'typescript'],
-    repoLink: 'https://github.com/NotKaskus/typescript-template',
-    url: 'https://github.com/NotKaskus/typescript-template',
+    technologies: [
+      {
+        name: 'Typescript',
+        icon: '/assets/icons/typescript.svg',
+      },
+      {
+        name: 'NodeJS',
+        icon: '/assets/icons/nodejs.svg',
+      },
+      {
+        name: 'Eslint',
+        icon: '/assets/icons/eslint.svg',
+      },
+    ],
+    github: 'https://github.com/NotKaskus/typescript-template',
+    website: 'https://github.com/NotKaskus/typescript-template',
     starGazerCount: 0,
     forkCount: 0,
   },
   {
     name: '~/.dotfiles',
-    description: 'My dotfiles for configuring for literally everything (automatically!)',
-    tags: ['zsh', 'bash'],
-    repoLink: 'https://github.com/NotKaskus/dotfiles',
-    url: 'https://github.com/NotKaskus/dotfiles',
+    description:
+      'My dotfiles for configuring for literally everything (automatically!)',
+    technologies: [
+      {
+        name: 'Bash',
+        icon: <VscTerminalBash width={20} height={20} className="h-5 w-5" />,
+      },
+      {
+        name: 'Git',
+        icon: '/assets/icons/git.svg',
+      },
+      {
+        name: 'VsCode',
+        icon: '/assets/icons/vscode.svg',
+      },
+    ],
+    github: 'https://github.com/NotKaskus/dotfiles',
+    website: 'https://github.com/NotKaskus/dotfiles',
     starGazerCount: 0,
     forkCount: 0,
   },
