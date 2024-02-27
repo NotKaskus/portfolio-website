@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import React from 'react';
 import { VscTerminalBash } from 'react-icons/vsc';
+import { FaLink } from "react-icons/fa6";
 
 import SectionHeader from '../SectionHeader';
 import RepoCard from './FeaturedProjects/RepoCard';
@@ -56,7 +58,14 @@ const projects = [
 export default function FeaturedProjects() {
   return (
     <>
-      <SectionHeader title="Featured Projects" />
+      <SectionHeader title="Featured Projects">
+        <Link
+          href="/work"
+          className="underlined inline-flex items-center gap-2 text-color-blue motion-reduce:transition-none">
+          <p>See more projects</p>
+          <FaLink />
+        </Link>
+      </SectionHeader>
       <div className="space-y-4 mt-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
           {projects.map((project, index) => (
