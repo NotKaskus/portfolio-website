@@ -6,7 +6,7 @@ import { BiGitRepoForked } from 'react-icons/bi';
 
 export function OtherProjectCard({ project }: { project: OtherProjectType }) {
   return (
-    <div className="mb-6 overflow-hidden rounded-xl border-[1px] border-black/15 duration-200 ease-in-out hover:bg-gray-200/50 motion-reduce:transition-none dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-card">
+    <div className="mb-6 overflow-hidden rounded-xl border-[1px] border-black/15 duration-200 ease-in-out hover:bg-gray-200/50 motion-reduce:transition-none dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-card/5">
       <Image
         src={project.projectBannerImage.src}
         width={720}
