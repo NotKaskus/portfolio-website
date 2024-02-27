@@ -6,7 +6,7 @@ import { BiGitRepoForked, BiStar } from 'react-icons/bi';
 import { parseISO } from '@/lib/utils';
 import { Button } from '../ui/button';
 
-export function RecentProjectCard({ project }: { project: Project }) {
+export function RecentProjectCard({ project }: { project: RecentProjectType }) {
   return (
     <div className="mx-auto mb-6 flex flex-col gap-8 overflow-hidden rounded-xl border-[1px] border-black/15 p-8 duration-200 ease-in-out hover:bg-gray-200/50 motion-reduce:transition-none dark:border-neutral-800 dark:hover:border-neutral-700 dark:hover:bg-card md:flex-row">
       <div className="columns-1">
@@ -82,7 +82,7 @@ export function RecentProjectCard({ project }: { project: Project }) {
   );
 }
 
-export interface Project {
+export interface RecentProjectType {
   name: string;
   description: string;
   technologies: Tech[];
