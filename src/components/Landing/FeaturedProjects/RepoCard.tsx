@@ -50,7 +50,7 @@ export default function RepoCard({ project }: { project: Project }) {
             : project.description}
         </p>
 
-        <div className="flex items-center gap-2 cursor-default mt-2">
+        <div className="flex flex-wrap items-center gap-2 cursor-default mt-2">
           {project.technologies.map((tech: Tech, index) => (
             <div key={index} className="flex items-center">
               <div className="flex cursor-pointer items-center gap-2 rounded-md border border-black/[15%] px-2 py-1 font-mono text-sm font-medium text-gray-800/[60%] duration-200 hover:bg-black/[5%] motion-reduce:transition-none dark:border-neutral-800 dark:text-white/[50%] dark:hover:border-neutral-700 dark:hover:bg-white/[5%]">
@@ -69,30 +69,6 @@ export default function RepoCard({ project }: { project: Project }) {
               </div>
             </div>
           ))}
-          {/* {project.github && (
-            <>
-              <Link
-                href={`${project.github}/stargazers`}
-                className="my-1 flex w-max snap-center snap-always content-center items-center rounded-lg border-2 border-transparent bg-black/5 px-[0.5em] py-[0.12em] align-middle text-[88%] text-gray-800/60 duration-200 hover:bg-black/10 motion-reduce:transition-none dark:bg-white/10 dark:text-white/70 dark:hover:bg-white/10">
-                <StarIcon
-                  className="mr-1 inline h-5 w-5 stroke-black/50 duration-200 motion-reduce:transition-none dark:stroke-white/70 dark:group-hover:stroke-white"
-                  aria-hidden="true"
-                  role="img"
-                />
-                <span className="ml-1">{project.starGazerCount}</span>
-              </Link>
-              <Link
-                href={`${project.github}/forks`}
-                className="my-1 flex w-max snap-center snap-always content-center items-center rounded-lg border-2 border-transparent bg-black/5 px-[0.5em] py-[0.12em] align-middle text-[88%] text-gray-800/60 duration-200 hover:bg-black/10 motion-reduce:transition-none dark:bg-white/10 dark:text-white/70 dark:hover:bg-white/10">
-                <BiGitRepoForked
-                  className="mr-1 inline h-5 w-5 stroke-black/50 duration-200 motion-reduce:transition-none dark:stroke-white/70 dark:group-hover:stroke-white"
-                  aria-hidden="true"
-                  role="img"
-                />
-                <span className="ml-1">{project.forkCount}</span>
-              </Link>
-            </>
-          )} */}
         </div>
       </div>
     </div>
