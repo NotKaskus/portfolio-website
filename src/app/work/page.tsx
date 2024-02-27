@@ -1,11 +1,10 @@
 import React from 'react';
 import { VscTerminalBash } from 'react-icons/vsc';
 
-import { RecentProjectCard } from '@/components/Work/RecentProjectCard';
+import { RecentProjectCard, type RecentProjectType } from '@/components/Work/RecentProjectCard';
+import { OtherProjectCard, type OtherProjectType } from '@/components/Work/OtherProjectCard';
 
-import type { Project } from '@/components/Work/RecentProjectCard';
-
-const projects: Project[] = [
+const projects: RecentProjectType[] = [
   {
     name: '~/.dotfiles',
     description:
@@ -68,6 +67,8 @@ const projects: Project[] = [
   },
 ];
 
+const otherProjects: OtherProjectType[] = [];
+
 export default function Work() {
   return (
     <main className="flex justify-center w-full mt-[13%] my-7xl lg:my-[4%] px-4 lg:px-0">
@@ -80,6 +81,8 @@ export default function Work() {
           and I have worked on many projects. Here are some of my most recent
           projects, you can find more on my Github profile.
         </p>
+
+        {/* Recent Projects Section */}
         <h2 className="scroll-mt-20 box-decoration-clone bg-clip-text text-[1.7rem] font-[750] motion-reduce:transition-none mb-3">
           Recent Projects
         </h2>
@@ -87,7 +90,15 @@ export default function Work() {
           <RecentProjectCard key={index} project={project} />
         ))}
 
-        {/* TODO: Add Other Projects Section */}
+        {/* Other Projects Section */}
+        <h2 className="scroll-mt-20 box-decoration-clone bg-clip-text text-[1.7rem] font-[750] motion-reduce:transition-none mb-3">
+          Other Projects
+        </h2>
+        <div className='mt-3 columns-1 gap-6 text-center text-gray-800 dark:text-white md:columns-2 lg:columns-3'>
+          {otherProjects.map((project, index) => (
+            <OtherProjectCard key={index} project={project} />
+          ))}
+        </div>
       </div>
     </main>
   );
