@@ -16,6 +16,7 @@ export function RecentProjectCard({ project }: { project: RecentProjectType }) {
             alt={project.projectBannerImage.alt}
             width={project.projectBannerImage.width}
             height={project.projectBannerImage.height}
+            priority
             className="cursor-zoom-in rounded-xl border-[1px] border-black/[15%] duration-200 hover:opacity-70 dark:border-neutral-800"
           />
         </Link>
