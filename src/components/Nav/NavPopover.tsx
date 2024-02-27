@@ -3,7 +3,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import {
   ChevronRightIcon,
-  RectangleStackIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
