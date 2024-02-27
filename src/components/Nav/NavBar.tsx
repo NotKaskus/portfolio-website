@@ -42,7 +42,7 @@ function NavItem({
   );
 }
 
-export default function NewNav() {
+export default function NavBar() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
