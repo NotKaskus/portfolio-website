@@ -16,8 +16,4 @@ export default function Error({ error }: { error: Error }) {
       </div>
     </main>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> source/main

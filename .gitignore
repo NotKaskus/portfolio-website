@@ -36,16 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Contentlayer
-/.contentlayer
-
-# Build Blogs Assets
-/public/blogs
-
-# Nextjs Bundle Analyzer
-/analyze
-
-# Build Sitemap Assets
-/public/sitemap.xml
-/public/sitemap-0.xml
-/public/robots.txt
+public/posts/
+.contentlayer/

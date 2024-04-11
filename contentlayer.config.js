@@ -7,11 +7,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
-<<<<<<< HEAD
-import staticImages, { staticCoverImage } from './src/lib/plugin/rehype-cl-img';
-=======
 import staticImages, { staticCoverImage } from './src/lib/plugins/rehype-cl-img';
->>>>>>> source/main
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
@@ -33,13 +29,8 @@ const computedFields = {
   },
 };
 
-<<<<<<< HEAD
-export const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-=======
 export const Post = defineDocumentType(() => ({
   name: 'Post',
->>>>>>> source/main
   filePathPattern: `**/*.mdx`,
   contentType: 'mdx',
   fields: {
@@ -79,14 +70,9 @@ export const Post = defineDocumentType(() => ({
 }));
 
 export default makeSource({
-<<<<<<< HEAD
-  contentDirPath: 'src/content/blogs',
-  documentTypes: [Blog],
-=======
   contentDirPath: 'src/content/posts',
   documentTypes: [Post],
   disableImportAliasWarning: true,
->>>>>>> source/main
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -123,19 +109,10 @@ export default makeSource({
       [
         staticImages,
         {
-<<<<<<< HEAD
-          publicDir: join(process.cwd(), 'public', 'blogs'),
-          resourcePath: '/blogs',
-=======
           publicDir: join(process.cwd(), 'public', 'posts'),
           resourcePath: '/posts',
->>>>>>> source/main
         },
       ],
     ],
   },
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> source/main

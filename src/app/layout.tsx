@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import '@/styles/globals.css';
-
-import { Inter } from 'next/font/google';
-
-import AnalyticsWrapper from '@/components/AnalyticsWrapper';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import { meta } from '@/lib/config';
-
-import type { Metadata } from 'next';
-
-const inter = Inter({ subsets: ['latin'] });
-=======
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "@/styles/globals.css";
@@ -25,7 +10,6 @@ import Footer from '@/components/layout/footer';
 import { meta } from '@/lib/config';
 
 const inter = Inter({ subsets: ["latin"] });
->>>>>>> source/main
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -85,19 +69,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-<<<<<<< HEAD
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className}`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          {children}
-          <Footer />
-          <AnalyticsWrapper />
-=======
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -110,7 +81,6 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
->>>>>>> source/main
         </ThemeProvider>
       </body>
     </html>

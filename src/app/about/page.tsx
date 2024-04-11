@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import AboutMe from '@/components/About/AboutMe';
-import AboutMeBanner from '@/components/About/AboutMeBanner';
-import AnimeWatchList from '@/components/About/AnimeWatchList';
-import TechStack from '@/components/About/TechStack';
-import Timeline from '@/components/About/Timeline';
-
-import type { Metadata } from 'next';
-
-=======
 import type { Metadata } from 'next';
 
 import AboutMeBanner from "@/components/about-info/about-me-banner";
@@ -17,7 +7,6 @@ import MyStuff from "@/components/about-info/my-stuff";
 import TechStack from "@/components/about-info/technologies";
 import AnimeWatchList from "@/components/about-info/anime-watchlist";
 
->>>>>>> source/main
 export function generateMetadata(): Metadata {
   return {
     title: 'About',
@@ -32,10 +21,6 @@ export function generateMetadata(): Metadata {
 
 export default function About() {
   return (
-<<<<<<< HEAD
-    <main className="flex justify-center w-full mt-[13%] my-7xl lg:my-[4%]">
-      <div className="flex flex-col gap-8 mx-auto max-w-7xl w-full px-8 md:px-10 mt-5">
-=======
     <div className="flex justify-center w-full md:mt-[13%] my-7xl lg:my-[4%]">
       <div className="flex flex-col gap-8 mx-auto max-w-7xl w-full px-8 md:px-10">
         <div className='mt-[5px]'>
@@ -43,21 +28,12 @@ export default function About() {
             A bit about me
           </h1>
         </div>
->>>>>>> source/main
         <div className="relative mb-2 inline-block overflow-hidden w-full h-full select-none">
           <AboutMeBanner />
         </div>
         <div className="mb-2">
           <AboutMe />
         </div>
-<<<<<<< HEAD
-        <div className="mb-9">
-          <TechStack />
-        </div>
-        <div className="mb-2">
-          <Timeline />
-        </div>
-=======
         <div className="mb-[5rem]">
           <h2 className="text-3xl font-bold tracking-tight text-primary md:text-5xl flex gap-2 items-center mb-2">
             My Socials
@@ -73,15 +49,10 @@ export default function About() {
           <TechStack />
         </div>
         {/* <div className="mb-2"><Timeline /></div> */}
->>>>>>> source/main
         <div className="grid gap-4">
           <AnimeWatchList />
         </div>
       </div>
-<<<<<<< HEAD
-    </main>
-=======
     </div>
->>>>>>> source/main
   );
 }

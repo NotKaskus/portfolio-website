@@ -22,8 +22,4 @@ export default function NotFound() {
       </div>
     </main>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> source/main

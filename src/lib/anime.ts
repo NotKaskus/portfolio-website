@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/* eslint-disable @typescript-eslint/prefer-optional-chain */
-
-=======
->>>>>>> source/main
 import AniList from 'anilist-node';
 
 import type { ListEntry } from 'anilist-node';
@@ -69,8 +64,4 @@ export interface FavAnimeInfo {
   siteUrl: string;
   title: string;
   episodes: number | null;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> source/main

@@ -1,59 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-
-@layer base {
-  @layer base {
-    :root {
-      --background: 225 21% 99%;
-      --foreground: 240 10% 3.9%;
-      --card: 0 0% 100%;
-      --card-foreground: 240 10% 3.9%;
-      --popover: 0 0% 100%;
-      --popover-foreground: 240 10% 3.9%;
-      --primary: 240 5.9% 10%;
-      --primary-foreground: 0 0% 98%;
-      --secondary: 240 4.8% 95.9%;
-      --secondary-foreground: 240 5.9% 10%;
-      --muted: 240 4.8% 95.9%;
-      --muted-foreground: 240 3.8% 46.1%;
-      --accent: 240 4.8% 95.9%;
-      --accent-foreground: 240 5.9% 10%;
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
-      --border: 240 5.9% 90%;
-      --input: 240 5.9% 90%;
-      --ring: 240 5.9% 10%;
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 225 22% 7%;
-      --foreground: 0 0% 98%;
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
-      --primary: 0 0% 98%;
-      --primary-foreground: 240 5.9% 10%;
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 240 5% 64.9%;
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-      --ring: 240 4.9% 83.9%;
-    }
-  }
-}
-
-@layer base {
-=======
  
 
 :root {
@@ -110,7 +57,6 @@
 }
  
 @layer base {
->>>>>>> source/main
   * {
     @apply border-border;
   }
@@ -125,8 +71,6 @@
     radial-gradient(at 0 0, black, transparent); */
 }
 
-<<<<<<< HEAD
-=======
 .lights {
   filter: grayscale(var(--grayscale-var)) brightness(var(--brightness-var));
   opacity: var(--opacity-var);
@@ -162,7 +106,6 @@
 }
 
 /* Watchlist */
->>>>>>> source/main
 .new-tag {
   display: block;
 }
@@ -179,10 +122,7 @@
   opacity: 1;
 }
 
-<<<<<<< HEAD
-=======
 /* Article Stlyes */
->>>>>>> source/main
 @layer article {
   .article-grid {
     display: grid;
@@ -259,44 +199,6 @@
   max-width: 1200px !important;
 }
 
-<<<<<<< HEAD
-.transition-250 {
-  transition-property:
-    color,
-    background-color,
-    border-color,
-    outline-color,
-    text-decoration-color,
-    fill,
-    stroke,
-    opacity,
-    box-shadow,
-    transform,
-    filter,
-    -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter;
-  transition-property:
-    color,
-    background-color,
-    border-color,
-    outline-color,
-    text-decoration-color,
-    fill,
-    stroke,
-    opacity,
-    box-shadow,
-    transform,
-    filter,
-    backdrop-filter,
-    -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.25s;
-}
-
-=======
->>>>>>> source/main
 h1.article-title {
   line-height: 1.35;
 }
@@ -304,12 +206,9 @@ h1.article-title {
 .burger svg[data-hide='true'] {
   @apply -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0;
 }
-<<<<<<< HEAD
-=======
 
 .bg-cat {
   background-image: url("https://http.cat/404.jpg");
   background-position: center center;
   background-size: cover;
 }
->>>>>>> source/main
