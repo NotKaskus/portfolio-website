@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* eslint-disable @next/next/no-img-element */
 
+=======
+>>>>>>> source/main
 import { ImageResponse } from 'next/og';
 import { type NextRequest } from 'next/server';
 
@@ -58,6 +61,10 @@ export function GET(req: NextRequest) {
               }}>
               {meta.author}
             </p>
+<<<<<<< HEAD
+=======
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+>>>>>>> source/main
             <img
               src={`${process.env.NEXT_PUBLIC_VERCEL_URL}/avatar.webp`}
               alt={meta.siteName}
@@ -80,4 +87,8 @@ export function GET(req: NextRequest) {
       status: 500,
     });
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> source/main

@@ -2,7 +2,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer');
 const { withContentlayer } = require('next-contentlayer');
 
 const bundleWithAnalyzer = withBundleAnalyzer({
+<<<<<<< HEAD
   enabled: process.env.ANALYZE === 'true',
+=======
+  enabled: false,
+>>>>>>> source/main
 });
 
 /** @type {import('next').NextConfig} */
@@ -71,7 +75,20 @@ module.exports = bundleWithAnalyzer(
           port: '',
           pathname: '/**',
         },
+<<<<<<< HEAD
       ],
     },
   }),
 );
+=======
+        {
+          protocol: 'https',
+          hostname: 'http.cat',
+          port: '',
+          pathname: '/**',
+        },
+      ],
+    },
+  }),
+);
+>>>>>>> source/main
