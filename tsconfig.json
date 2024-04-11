@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "es5",
-=======
->>>>>>> source/main
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,43 +13,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-<<<<<<< HEAD
-    "plugins": [
-      {
-        "name": "next",
-      },
-=======
     // "disableImportAliasWarnings": true,
     "plugins": [
       {
         "name": "next"
       }
->>>>>>> source/main
     ],
     "paths": {
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"],
       "contentlayer/generated": ["./.contentlayer/generated"],
-<<<<<<< HEAD
-    },
-  },
-  "include": [
-    ".eslintrc.cjs",
-    "next-env.d.ts",
-    "src/types/**/*.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.mjs",
-    "**/*.js",
-    "**/*.cjs",
-    ".next/types/**/*.ts",
-  ],
-  "exclude": ["node_modules"],
-=======
 
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
->>>>>>> source/main
 }

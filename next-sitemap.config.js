@@ -2,8 +2,4 @@
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_VERCEL_URL ?? 'https://localhost:3000',
   generateRobotsTxt: true,
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> source/main
