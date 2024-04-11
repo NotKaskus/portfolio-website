@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+:root {
+  --grayscale-var: 0;
+  --brightness-var: 1;
+  --opacity-var: 1;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 225 22% 7%;
+    --foreground: 0 0% 98%;
+    --card: 225 22% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 225 22% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.article-image {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  /* -webkit-mask-image: linear-gradient(to left, black, transparent),
+    radial-gradient(at 0 0, black, transparent); */
+}
+
+.lights {
+  filter: grayscale(var(--grayscale-var)) brightness(var(--brightness-var));
+  opacity: var(--opacity-var);
+}
+
+/* POLAROID */
+
+.polaroid {
+  transform: rotate(2deg);
+}
+
+.polaroid:before,
+.polaroid:after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 120px;
+  background-color: rgba(102, 102, 102, 0.6);
+  transform: rotate(-40deg);
+  z-index: 20;
+  filter: grayscale(var(--grayscale-var)) brightness(var(--brightness-var));
+  opacity: var(--opacity-var);
+}
+
+.polaroid:before {
+  top: 15px;
+  left: -30px;
+}
+
+.polaroid:after {
+  bottom: 12px;
+  right: -25px;
+}
+
+/* Watchlist */
+.new-tag {
+  display: block;
+}
+
+.watchlist-grid {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.watchlist-grid .watchlist-item {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.watchlist-grid .watchlist-item:hover {
+  opacity: 1;
+}
+
+/* Article Stlyes */
+@layer article {
+  .article-grid {
+    display: grid;
+    font-family:
+      'Hanken Grotesk',
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Open Sans',
+      'Helvetica Neue',
+      sans-serif;
+    font-weight: 400;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr min(50rem, 100%) 1fr;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    justify-content: center;
+    grid-row-gap: 8px;
+  }
+
+  .article-grid :global(code) {
+    background: red;
+  }
+
+  @media screen and (max-width: 500px) {
+    .article-grid > blockquote {
+      padding-left: 0;
+    }
+  }
+  .article-grid > blockquote {
+    color: hsl(225 8% 21%);
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .article-grid > blockquote {
+    color: hsl(225 8% 21%);
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* lower specificity */
+  :where(.article-grid.larger-line-height > *) {
+    line-height: 2.5rem;
+  }
+  :where(.article-grid img) {
+    /* centering smaller images */
+    margin: 0 auto;
+  }
+  :where(.article-grid > *) {
+    grid-column: 2 / auto;
+  }
+
+  :where(.article-grid > astro-island > *) {
+    grid-column: 2 / auto;
+  }
+
+  .article-grid ul {
+    /* fallback */
+    list-style-type: disc;
+    list-style-type: japanese-formal;
+  }
+}
+
+.article-banner {
+  grid-column: 1/-1;
+  max-width: 1200px !important;
+}
+
+h1.article-title {
+  line-height: 1.35;
+}
+
+.burger svg[data-hide='true'] {
+  @apply -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0;
+}
+
+.bg-cat {
+  background-image: url("https://http.cat/404.jpg");
+  background-position: center center;
+  background-size: cover;
+}
