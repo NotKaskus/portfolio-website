@@ -4,8 +4,6 @@ import {
   Home,
   NotebookPen,
   Newspaper,
-  BriefcaseBusiness,
-  Contact,
 } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 
