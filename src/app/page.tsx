@@ -19,7 +19,7 @@ export function generateMetadata(): Metadata {
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-8 mx-auto max-w-7xl w-full px-4 md:px-6'>
+    <div className='flex flex-col gap-8 mx-auto max-w-7xl w-full px-4 md:px-6 md:mt-[5%]'>
       <div className="mb-4">
         <HeroSection />
       </div>

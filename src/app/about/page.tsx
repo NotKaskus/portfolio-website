@@ -21,7 +21,7 @@ export function generateMetadata(): Metadata {
 
 export default function About() {
   return (
-    <div className="flex justify-center w-full md:mt-[13%] my-7xl lg:my-[4%]">
+    <div className="flex justify-center w-full my-7xl lg:my-[4%] lg:mt-[1%]">
       <div className="flex flex-col gap-8 mx-auto max-w-7xl w-full px-8 md:px-10">
         <div className='mt-[5px]'>
           <h1 className="mb-5 md:ml-[1.5rem] text-3xl font-bold tracking-tight text-primary md:text-5xl">

@@ -77,7 +77,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
-          <main className='flex justify-center w-full mt-[10%] md:mt-[15%] lg:mb-[6%] lg:mt-[0%] homepage'>
+          <main className='flex justify-center w-full mt-[10%] md:mt-[3%] lg:mt-[2%] lg:mb-[6%] homepage'>
             {children}
           </main>
           <Footer />

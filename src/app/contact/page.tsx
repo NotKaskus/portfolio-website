@@ -22,7 +22,7 @@ export function generateMetadata(): Metadata {
 
 export default function page() {
   return (
-    <div className="max-w-screen-lg mx-auto px-6 md:px-0 md:min-h-screen pb-8 md:mt-[4rem]">
+    <div className="max-w-screen-lg mx-auto px-6 md:px-0 md:min-h-screen pb-8 md:mt-[2%]">
       <div className="space-y-2 my-12 sm:mt-0">
         <h1 className="mb-5 text-3xl font-bold tracking-tight text-primary md:text-5xl">
           Contact

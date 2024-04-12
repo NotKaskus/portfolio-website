@@ -55,7 +55,7 @@ const projects: Project[] = [
 
 export default function ProjectsPage() {
   return (
-    <div className="max-w-screen-lg mx-auto px-6 md:px-0 min-h-screen pb-8">
+    <div className="max-w-screen-lg mx-auto px-6 md:px-[3rem] lg:px-0 min-h-screen pb-8">
       <div className="space-y-2 my-12 sm:mt-0">
         <h1 className="mb-5 text-3xl font-bold tracking-tight text-primary md:text-5xl">
           My projects
