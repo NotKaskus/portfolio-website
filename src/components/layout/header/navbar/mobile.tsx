@@ -103,9 +103,17 @@ export default function MobileNav() {
                   </MobileLink>
                 ),
             )}
-            <MobileLink key={'/contact'} href="/contact" onOpenChange={setOpen}>
-              Contact
-            </MobileLink>
+						{nav.more?.map(
+              (item, index) =>
+                item.href && (
+                  <MobileLink
+                    key={index}
+                    href={item.href}
+                    onOpenChange={setOpen}>
+                    {item.title}
+                  </MobileLink>
+                ),
+            )}
           </div>
         </ScrollArea>
       </SheetContent>
