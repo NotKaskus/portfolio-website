@@ -54,7 +54,7 @@ export const nav = {
     {
       href: "/about",
       Icon: NotebookPen,
-      title: "About Me",
+      title: "About",
     },
     {
       href: "/posts",
