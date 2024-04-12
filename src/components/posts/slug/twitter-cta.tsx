@@ -23,7 +23,7 @@ export default function TwitterCTA({ className }: { className: string }) {
                 Follow Me
               </span>
             </a>
-            <a href={link} target="_blank" rel="noreferrer noopener" className="external-link bg-[#fcfcfd] dark:bg-[#0e1016] rounded-xl text-xl font-medium w-full flex justify-center items-center whitespace-nowrap h-fit py-2 px-6 outline-1 outline outline-[#e9ebf1] dark:outline-[#181b25] transition-transform -hover:translate-y-1 decoration-none"> {/** TODO: Change this twitter tweet the post link */}
+            <a href={link} target="_blank" rel="noreferrer noopener" className="external-link bg-[#fcfcfd] dark:bg-[#0e1016] rounded-xl text-xl font-medium w-full flex justify-center items-center whitespace-nowrap h-fit py-2 px-6 outline-1 outline outline-[#e9ebf1] dark:outline-[#181b25] transition-transform -hover:translate-y-1 decoration-none">
               <Rss className="me-4 text-primary" />
               <span className="text-primary">
                 Subscribe to rss feed

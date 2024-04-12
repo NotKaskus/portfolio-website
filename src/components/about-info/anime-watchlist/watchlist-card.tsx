@@ -37,7 +37,6 @@ export default function WatchListCard({
           <div className="z-0 flex text-sm w-full color-text-400 justify-between items-baseline absolute opacity-0 bottom-0 transition-300 ease-in-out group-hover:opacity-100">
             <p className="mr-2 color-text-200 font-semibold text-xs">
               {' '}
-              {/* TODO: Fix the formating here is ugly and the animation its static make it smooth */}
               Episode
             </p>
             <p>EP {animeInfo.progress}</p>

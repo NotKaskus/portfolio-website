@@ -25,7 +25,7 @@ export const meta = {
     },
     discord: {
       username: "paulandrew",
-      invite: "https://discord.gg/sgt4QEyDxK", // TODO: CHANEGE ME
+      invite: "https://discord.gg/XcbMwAyUJ9",
       id: "544164729354977282",
     },
     instagram: {
@@ -40,7 +40,7 @@ export const header = {
   subtitle: "Full-stack developer",
   description: meta.description,
   code: {
-    user: "kaskus", // TODO: CHANEGE ME
+    user: "kaskus",
   },
 };
 

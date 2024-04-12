@@ -17,7 +17,6 @@ export function Polaroid({ ...props }: ComponentProps<"div">) {
       rel="noopener noreferrer"
     >
       <div className="lights relative h-full bg-black/70 backdrop-blur sm:h-full">
-        {/* TODO: make this photo change every refresh */}
         <Image
         fill
           quality={100}
