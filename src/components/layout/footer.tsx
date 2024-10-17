@@ -24,7 +24,7 @@ export default function Footer() {
           </p>
 
           <p className="mb-4 text-gray-700 opacity-85 dark:text-neutral-300">
-            I don&apos;t see bugs in my code, I see random features.
+						This website is inspired by <Link href='https://xetera.dev' target={'_blank'}>Xetera's</Link> website.
           </p>
         </div>
         {footer.categories.map((category: FooterCategory, index: number) => (

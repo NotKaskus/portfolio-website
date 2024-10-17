@@ -4,20 +4,11 @@ const featured_projects_data = [
   {
     name: "typescript-template",
     description: "A project template for all my projects that use typescript",
-    technologies: [
-      {
-        name: "Typescript",
-        icon: "/assets/icons/typescript.svg",
-      },
-      {
-        name: "NodeJS",
-        icon: "/assets/icons/nodejs.svg",
-      },
-      {
-        name: "Eslint",
-        icon: "/assets/icons/eslint.svg",
-      },
-    ],
+    language: {
+			name: "TypeScript",
+			bg_color: "bg-[#2b7489]",
+			border_color: 'border-[#2b7489]'
+		},
     github: "typescript-template",
     website: `https://github.com/${meta.accounts.github.username}/typescript-template`,
   },
@@ -25,20 +16,11 @@ const featured_projects_data = [
     name: "~/.dotfiles",
     description:
       "My dotfiles for configuring for literally everything (automatically!)",
-    technologies: [
-      {
-        name: "Bash",
-        icon: "/assets/icons/bash.svg",
-      },
-      {
-        name: "Git",
-        icon: "/assets/icons/git.svg",
-      },
-      {
-        name: "VsCode",
-        icon: "/assets/icons/vscode.svg",
-      },
-    ],
+    language: {
+			name: "Shell",
+			bg_color: "bg-[#89e051]",
+			border_color: 'border-[#89e051]'
+		},
     github: "dotfiles",
     website: `https://github.com/${meta.accounts.github.username}/dotfiles`,
   },

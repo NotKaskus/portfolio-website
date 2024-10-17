@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
+import type { LinkProps } from 'next/link';
+
 import { meta, nav } from '@/lib/config';
 import { cn } from '@/lib/utils';
 
@@ -12,9 +14,6 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 import NavbarLogo from './navbar-logo';
-
-import type { LinkProps } from 'next/link';
-
 
 interface MobileLinkProps extends LinkProps {
   onOpenChange?: (open: boolean) => void;
@@ -93,17 +92,6 @@ export default function MobileNav() {
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
             {nav.left?.map(
-              (item, index) =>
-                item.href && (
-                  <MobileLink
-                    key={index}
-                    href={item.href}
-                    onOpenChange={setOpen}>
-                    {item.title}
-                  </MobileLink>
-                ),
-            )}
-						{nav.more?.map(
               (item, index) =>
                 item.href && (
                   <MobileLink

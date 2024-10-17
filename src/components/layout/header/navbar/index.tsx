@@ -7,8 +7,6 @@ import { meta, nav } from '@/lib/config';
 import { cn } from '@/lib/utils';
 
 import NavbarLogo from './navbar-logo';
-import NavbarPopover from './navbar-popover';
-
 import MobileNav from './mobile';
 
 function NavItem({
@@ -20,7 +18,7 @@ function NavItem({
   text: string;
   target?: string;
 }) {
-  const pathname = usePathname() || '/';
+	const pathname = usePathname() || '/';
   let isActive = pathname.split('/')[1].trim() === path.split('/')[1].trim();
 
   if (path.startsWith('https://') || path.startsWith('http://')) {
@@ -28,8 +26,8 @@ function NavItem({
     target = '_blank';
   }
 
-  return (
-    <Link
+	return (
+		<Link
       key={path}
       href={path}
       target={target}
@@ -41,13 +39,13 @@ function NavItem({
       )}>
       {text}
     </Link>
-  );
+	)
 }
 
 export default function NavBar() {
 	return (
 		<>
-			<div className="mr-4 hidden md:flex">
+			<div className='mr-4 hidden md:flex'>
 				<Link href="/" className="mr-6 flex items-center space-x-2">
 					<NavbarLogo />
 					<span className="hidden font-bold text-xl sm:inline-block">
@@ -58,10 +56,9 @@ export default function NavBar() {
 					{nav.left.map((item, index: number) => {
 						return <NavItem path={item.href} text={item.title} key={index} />;
 					})}
-					<NavbarPopover />
 				</nav>
 			</div>
-		
+
 			<MobileNav />
 		</>
 	)
